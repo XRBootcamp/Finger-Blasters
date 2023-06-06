@@ -24,6 +24,7 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 12999f1547a7b1744ba175c4df92a0c2,
     type: 3}
   m_ValidKeywords:
+  - _USE_BIG_SCANLINE
   - _USE_COLLISION_RIPPLES
   - _USE_EDGE_GLOW
   - _USE_INTERSECTION
@@ -101,7 +102,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AspectRatio: 1
+    - _AspectRatio: 0
+    - _BigScanlineSpeed: 0.16
+    - _BigScanlineStrength: 0.5
+    - _BigScanlineThickness: 0.05
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -111,16 +115,16 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EdgeGlowStrength: 0.59
+    - _EdgeGlowStrength: 0.64
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _GlowNoiseScale: 8.42
-    - _GlowSpeed: 2.51
+    - _GlowNoiseScale: 8.2
+    - _GlowSpeed: 5
     - _HeightMapStrength: 0.02
-    - _IntersectionStrength: 0.02
-    - _IntersectionThickness: 2.69
+    - _IntersectionStrength: 0
+    - _IntersectionThickness: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -130,11 +134,12 @@ Material:
     - _RippleSpeed: 1
     - _RippleThickness: 1
     - _RippleTime: 1
-    - _Smoothness: 0.74
+    - _Smoothness: 1.58
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _USE_BIG_SCANLINE: 1
     - _USE_COLLISION_RIPPLES: 1
     - _USE_EDGE_GLOW: 1
     - _USE_INTERSECTION: 1
@@ -142,11 +147,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.35719395, b: 1, a: 0.34117648}
+    - _BaseColor: {r: 0, g: 0.81057835, b: 1, a: 0.56078434}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EdgeGlowThickness: {r: 0.02, g: 0.02, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GlowStrengthMinMax: {r: 0, g: 0, b: 0, a: 0}
+    - _EdgeGlowThickness: {r: 0.12, g: 1.65, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowStrengthMinMax: {r: 0.05, g: 0.5, b: 0, a: 0}
     - _RippleOrigin: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
