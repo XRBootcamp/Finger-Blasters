@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &6690277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725,
+    type: 3}
+  m_PrefabInstance: {fileID: 741469510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &19218508
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +408,83 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1914875822}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &741469510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1605819244}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_Name
+      value: Bit Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.2947645
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5165
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.461222
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.127
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ea13819741bb3454e8cc253090eaabe1, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 47debd9033d666b41bbadf28db4af725, type: 3}
 --- !u!1 &906064004
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +618,7 @@ Transform:
   m_Children:
   - {fileID: 1698861630}
   - {fileID: 19218509}
+  - {fileID: 6690277}
   m_Father: {fileID: 1977171465}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 10.752, z: -3.469}
