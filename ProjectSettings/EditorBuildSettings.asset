@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_FingerBlasters/Scenes/FingerBlastersMain.unity
-    guid: 87d3b798400147b4ea60bbaf546ff0d1
+    path: Assets/_FingerBlasters/Scenes/LevelTest2.unity
+    guid: 6dfc1ed2dce298c4dbde6ea26d2552f4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 558839ce494eb2c43a78988a17d8588c,
       type: 2}

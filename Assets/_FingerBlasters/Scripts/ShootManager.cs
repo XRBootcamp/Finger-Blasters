@@ -8,8 +8,15 @@ public class ShootManager : MonoBehaviour
 
     [Header("BulletPrefab")]
     // GameObject used as Bullet to Instatiate 
-    [SerializeField] GameObject bulletPrefab;
+    public GameObject bulletPrefab;
     public float speed = 50f;
+
+    [Header("ShieldPrefab")]
+    [SerializeField] GameObject shieldPrefab;
+
+    [Header("MenuPrefab")]
+    [SerializeField] GameObject menuPrefab;
+
 
     [Header("Aim Circle")]
     public Transform gunTip;
@@ -17,6 +24,8 @@ public class ShootManager : MonoBehaviour
 
     private float maxDistance = 100f;
     public LayerMask whatCanCollide;
+
+    public GestureDetector gestureDetector;
 
     // Enum where we set the mode of shooting the bullet
     public enum ShootMode
@@ -31,6 +40,7 @@ public class ShootManager : MonoBehaviour
 
     // Boolean to use in single ShootMode
     private bool hasShoot = false;
+
 
     // Float used to calculate the time need to fire the bullet, related to the bullet fireRate
     private float timeToFire = 0f;
@@ -61,6 +71,37 @@ public class ShootManager : MonoBehaviour
         }
     }
 
+    public void OnShield()
+    {
+        if(gestureDetector.currentGesture.name == "ShieldGesture")
+        {
+            shieldPrefab.gameObject.SetActive(true);
+            menuPrefab.gameObject.SetActive(false);
+        }
+        
+    }
+
+    public void StopShield()
+    {
+        shieldPrefab.gameObject.SetActive(false);
+        
+    }
+
+    public void onMenu()
+    {
+        if(gestureDetector.currentGesture.name == "MenuGesture")
+        {
+            menuPrefab.gameObject.SetActive(true);
+            shieldPrefab.gameObject.SetActive(false);
+        }
+        
+    }
+
+    public void stopMenu()
+    {
+        menuPrefab.gameObject.SetActive(false);
+    }
+
     void Update()
     {
         RaycastHit hit;
@@ -80,8 +121,8 @@ public class ShootManager : MonoBehaviour
     private void Shoot()
     {
         // In the End we will going to shoot a bullet
-        GameObject bullet = Instantiate(bulletPrefab, hand.position, Quaternion.identity);
-        bullet.transform.localRotation = hand.rotation;
+        GameObject bullet = Instantiate(bulletPrefab, gunTip.position, Quaternion.identity);
+        bullet.transform.localRotation = gunTip.rotation;
         bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * speed * 2f); //Set the speed of the projectile by applying force to the rigidbody
     }
 

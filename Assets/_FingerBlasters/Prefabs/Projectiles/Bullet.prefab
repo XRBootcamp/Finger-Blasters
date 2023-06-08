@@ -120,6 +120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RifleShot
       objectReference: {fileID: 0}
+    - target: {fileID: 1858073447567881620, guid: 3cdc8e44a7c30264c9795449090516db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6299585063952813650, guid: 3cdc8e44a7c30264c9795449090516db,
         type: 3}
       propertyPath: m_RootOrder
@@ -250,6 +255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PistolShot
       objectReference: {fileID: 0}
+    - target: {fileID: 3063579468054293132, guid: b6ebe861c82b9f445804a2e6c915857e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ebe861c82b9f445804a2e6c915857e, type: 3}
 --- !u!4 &4254395504912085985 stripped
@@ -269,6 +279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShotDeathParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325505161994505558, guid: 30f10e741c5a500408f750801cd73b48,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8852597553267232558, guid: 30f10e741c5a500408f750801cd73b48,
         type: 3}
