@@ -19,7 +19,6 @@ public class Rocket : GenericBullet
     {
         transform.rotation = Quaternion.LookRotation(rb.velocity);
         base.Update();
-
     }
 
     private void OnCollisionEnter(Collision other)

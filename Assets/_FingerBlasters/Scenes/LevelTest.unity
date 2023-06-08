@@ -182,7 +182,7 @@ MonoBehaviour:
     type: 3}
   bulletPrefab2: {fileID: 1858073447567881620, guid: 3cdc8e44a7c30264c9795449090516db,
     type: 3}
-  rocketPrefab: {fileID: 8249346866942312486, guid: ef39c9e63b09a1e47a6a91ef26c4c539,
+  rocketPrefab: {fileID: 5860275704455560863, guid: 2342fcb5320095e4aabb2f8c1e3eb265,
     type: 3}
   laserPrefab: {fileID: 2571673239523184683, guid: 3340c39454292a84a9fd714c8759b5a2,
     type: 3}
