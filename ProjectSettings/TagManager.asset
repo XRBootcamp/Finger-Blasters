@@ -3,19 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Target
+  - Bullet
+  - Hands
+  - Crossbow
+  - Rifle
+  - Rocket
+  - EnemyShield
+  - RocketBullet
+  - RifleBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullet
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - EnemyBullet
+  - EnemyShield
+  - RifleBullet
   - 
   - 
   - 
