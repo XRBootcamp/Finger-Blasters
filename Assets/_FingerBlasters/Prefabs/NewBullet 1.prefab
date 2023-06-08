@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 4615003313031166}
   - component: {fileID: 54969070811294218}
   - component: {fileID: 135507269612158032}
-  - component: {fileID: 3387928572344464767}
-  - component: {fileID: 7443288844093353810}
   m_Layer: 3
   m_Name: NewBullet 1
   m_TagString: Bullet
@@ -28,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587250918974726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.62, z: -10.12}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -68,42 +66,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.07
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3387928572344464767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587250918974726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 498809fa8c0bd144bb8e262ea8fc34cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impactParticle: {fileID: 1199389177536902, guid: 62bd9cb00576bac4fb66f9bcc0adf19d,
-    type: 3}
-  projectileParticle: {fileID: 1287730090610360, guid: ada9d5c31c0e29b41bc5056c16b70b62,
-    type: 3}
-  muzzleParticle: {fileID: 1450659006645416, guid: c990de991a9e10245b04d95ec88912e5,
-    type: 3}
-  trailParticles: []
-  colliderRadius: 1
-  collideOffset: 0.15
-  damage: 20
-  fireRate: 3
-  timeBeforeDestroyed: 5
---- !u!114 &7443288844093353810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587250918974726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 051702910463762428a908339cf62295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1687963200055190304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115,6 +77,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957489661079567220, guid: d33d2e19c7122b74a99c6427c89ccbd2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3957489661079567227, guid: d33d2e19c7122b74a99c6427c89ccbd2,
         type: 3}
@@ -245,6 +212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rocket09_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249346866942312486, guid: ef39c9e63b09a1e47a6a91ef26c4c539,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef39c9e63b09a1e47a6a91ef26c4c539, type: 3}
@@ -400,6 +372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813178402136412167, guid: c43d0628fedf9884e89ad5510b4818fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43d0628fedf9884e89ad5510b4818fa, type: 3}
