@@ -14,8 +14,6 @@ public struct Gesture
 
 public class GestureDetector : MonoBehaviour
 {
-    public Gesture currentGesture;
-
     // How much accurate the recognize should be
     [Header("Threshold value")]
     public float threshold = 0.1f;
@@ -89,7 +87,7 @@ public class GestureDetector : MonoBehaviour
         if (hasStarted.Equals(true))
         {
             // start to Recognize every gesture we make
-            currentGesture = Recognize();
+            Gesture currentGesture = Recognize();
 
             // we will associate the recognize to a boolean to see if the Gesture
             // we are going to make is one of the gesture we already saved
@@ -199,7 +197,6 @@ public class GestureDetector : MonoBehaviour
         }
 
         // so in the end we can return from the function the exact gesture we want to do
-        Debug.Log("recognized: " + currentGesture.name);
         return currentGesture;
     }
 }

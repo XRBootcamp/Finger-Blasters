@@ -65,10 +65,6 @@ public class ProjectileScript : MonoBehaviour
 
                 npc.TakeDamage(damage);
             }
-            if (hit.transform.tag == "Enemy")
-            {
-                Destroy(hit.transform.gameObject);
-            }
 
             foreach (GameObject trail in trailParticles)
             {
