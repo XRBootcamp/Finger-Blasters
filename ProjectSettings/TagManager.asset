@@ -7,6 +7,13 @@ TagManager:
   - Target
   - Bullet
   - Hands
+  - Crossbow
+  - Rifle
+  - Rocket
+  - EnemyShield
+  - RocketBullet
+  - RifleBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,11 +21,11 @@ TagManager:
   - Bullet
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - EnemyBullet
+  - EnemyShield
+  - RifleBullet
   - 
   - 
   - 
